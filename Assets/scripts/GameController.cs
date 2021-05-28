@@ -25,7 +25,6 @@ public class GameControler : MonoBehaviour{
         StartCoroutine(ShowCubePlace());
     }
 
-
     IEnumerator ShowCubePlace(){
         while(true){
             SpawnPositions();
