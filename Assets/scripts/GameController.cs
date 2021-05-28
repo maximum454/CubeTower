@@ -35,19 +35,19 @@ public class GameControler : MonoBehaviour{
 
     private void SpawnPositions(){
         List<Vector3> positions = new List<Vector3>();
-        if( IsPositionEmpty (new Vector3(nowCube.x + 1, nowCube.y, nowCube.z) ) )
+        if( IsPositionEmpty (new Vector3(nowCube.x + 1, nowCube.y, nowCube.z) ))
             positions.Add(new Vector3(nowCube.x + 1, nowCube.y, nowCube.z));
-        else if(new Vector3(nowCube.x - 1, nowCube.y, nowCube.z))
+        if( IsPositionEmpty (new Vector3(nowCube.x + 1, nowCube.y, nowCube.z) ))
             positions.Add(new Vector3(nowCube.x - 1, nowCube.y, nowCube.z));
 
-        else if(new Vector3(nowCube.x, nowCube.y+1, nowCube.z))
+        if( IsPositionEmpty (new Vector3(nowCube.x + 1, nowCube.y, nowCube.z) ))
             positions.Add(new Vector3(nowCube.x, nowCube.y+1, nowCube.z));
-        else if(new Vector3(nowCube.x, nowCube.y-1, nowCube.z))
+        if( IsPositionEmpty (new Vector3(nowCube.x + 1, nowCube.y, nowCube.z) ))
             positions.Add(new Vector3(nowCube.x, nowCube.y-1, nowCube.z));
 
-        else if(new Vector3(nowCube.x, nowCube.y, nowCube.z + 1))
+        if( IsPositionEmpty (new Vector3(nowCube.x + 1, nowCube.y, nowCube.z) ))
             positions.Add(new Vector3(nowCube.x, nowCube.y, nowCube.z + 1));
-        else if(new Vector3(nowCube.x, nowCube.y, nowCube.z-1))
+        if( IsPositionEmpty (new Vector3(nowCube.x + 1, nowCube.y, nowCube.z) ))
             positions.Add(new Vector3(nowCube.x, nowCube.y, nowCube.z-1));
         
         
